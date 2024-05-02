@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-// import styles from '../styles/Filters.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { togglePopup } from '../features/catalog/catalogSlice';
 import { IoMdClose } from "react-icons/io";
 
 
-const Filters = ({ onFilter }) => {
+const Filters = ({ onFilter }) =>{
+  //Initialize the state values
   const [filters, setFilters] = useState({
     gender: [],
     color: [],
@@ -65,11 +65,11 @@ const Filters = ({ onFilter }) => {
     });
   };
   
-
+//Share the filter values to ProductListing Page
   const handleFilter = () => {
     onFilter(filters);
   };
-
+// Clear the selected filters
   const handleClearFilter = () =>{
       setFilters(
         {
@@ -179,7 +179,7 @@ const Filters = ({ onFilter }) => {
                       <label key={index}>
                         <input
                           type="checkbox"
-                          checked={filters.gender === item}
+                          checked={filters.gender.includes(item)}
                           onChange={() => handleCheckboxChange('gender', item)}
                         />
                         {item}
@@ -195,7 +195,7 @@ const Filters = ({ onFilter }) => {
                       <label key={index}>
                         <input
                           type="checkbox"
-                          checked={filters.color === item}
+                          checked={filters.color.includes(item)}
                           onChange={() => handleCheckboxChange('color', item)}
                         />
                         {item}
@@ -218,7 +218,7 @@ const Filters = ({ onFilter }) => {
                       <label key={index}>
                         <input
                           type="checkbox"
-                          checked={filters.priceRange === item}
+                          checked={filters.priceRange.includes(item)}
                           onChange={() => handleCheckboxChange('priceRange', item)}
                         />
                         {label}
@@ -234,7 +234,7 @@ const Filters = ({ onFilter }) => {
                       <label key={index}>
                         <input
                           type="checkbox"
-                          checked={filters.type === item}
+                          checked={filters.type.includes(item)}
                           onChange={() => handleCheckboxChange('type', item)}
                         />
                         {item}
