@@ -1,0 +1,75 @@
+/* SearchBar.css */
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items and distribute space evenly */
+  max-width: 400px;
+  min-width: 100px;
+  margin: 0px auto 20px;
+}
+
+.searchBar .searchInput {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.searchBar .searchBar-icons {
+  display: none; /* Initially hide the icons */
+}
+
+.searchBar .searchButton {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.searchBar .searchButton:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for large screens */
+@media screen and (min-width: 1024px) {
+  .searchBar.searchInput {
+    width: 300px; /* Adjust the width of the input field for larger screens */
+  }
+
+  .searchBar .searchButton {
+    padding: 0.5rem 1.5rem; /* Adjust the padding of the search button for larger screens */
+  }
+}
+
+/* Media query for responsive view */
+@media screen and (max-width: 768px) {
+  .searchBar .searchBar-icons {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    padding: 5px;
+    margin: 3px;
+    border: none;
+    background: transparent;
+    color: #111316;
+  }
+ 
+  .searchBar .searchButton {
+    display: none; /* Hide the search button in responsive view */
+  }
+}
+
+@media screen and (max-width:320px){
+  .searchBar .searchBar-icons {
+    font-size: 18px !important;
+    padding: 3px !important;
+    margin: 0px !important;
+}
+}

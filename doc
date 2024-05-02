@@ -1,0 +1,62 @@
+
+Project Documentation: Teerex Store
+
+Introduction:
+Teerex Store is a simple e-commerce web application developed using React.js. It provides users with a platform to browse, search, and purchase products from a catalog. The application offers various features such as product filtering, search functionality, and shopping cart management.
+
+Features:
+
+Product Listing Page:
+
+Displays a grid layout of products.
+Each product card contains essential information like image, name, and price.
+Header:
+
+Includes a search bar for searching products.
+Provides a shopping cart icon to view and manage the shopping cart.
+Filters:
+
+Allows users to filter products based on attributes such as gender, color, price range, and type.
+Supports multiple filter selections for refining search results.
+Dynamically adjusts filter options based on user selections.
+Search:
+
+Enables users to search for products using free text input.
+Matches search queries against product names, colors, and types.
+Product Cards:
+
+Displays individual product details in a responsive grid layout.
+Each product card includes an image, name, and price.
+Shopping Cart:
+
+Users can add products to the shopping cart.
+Allows users to view and manage items in the shopping cart.
+Supports increasing the quantity or removing items from the cart.
+Calculates and displays the total amount of items in the cart.
+Project Structure:
+
+Components: Contains reusable React components for building the user interface.
+
+Header: Contains the search bar and shopping cart icon.
+Filters: Provides options to filter products based on various attributes.
+ProductCard: Displays individual product details.
+ErrorMessage: Displays error messages for data loading issues.
+Features: Manages specific functionalities of the application.
+
+Catalog: Handles state management and data fetching for the product catalog.
+Redux: Manages global state using Redux and Redux Toolkit.
+
+Includes actions, reducers, and async thunks for fetching products and managing the shopping cart.
+CSS Styles: Utilizes CSS modules for styling components.
+
+Implements responsive design using media queries for different screen sizes.
+Functionality:
+
+Users can browse the product catalog and view detailed information about each product.
+Filter options allow users to refine product search results based on specific attributes.
+The search functionality enables users to find products using free text input.
+Products can be added to the shopping cart, and users can manage the cart contents.
+The user interface layout adjusts responsively for optimal viewing across various devices.
+Conclusion:
+
+Teerex Store provides users with a seamless shopping experience, offering a range of features for product discovery and purchase. The application is designed to be user-friendly, with intuitive navigation and responsive design. With its robust functionality and clean interface, Teerex Store aims to enhance the online shopping experience for customers.

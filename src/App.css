@@ -1,0 +1,34 @@
+/* import the all component styles here */
+
+@import '../src/styles/SearchBar.css';
+@import '../src/styles/Filters.css';
+@import '../src/styles/ProductListing.css';
+@import '../src/styles/ProductCard.css';
+@import '../src/styles/ShoppingCart.css';
+@import '../src/styles/Footer.css';
+@import '../src/styles/Header.css';
+@import '../src/styles/Error.css';
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Style for links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+

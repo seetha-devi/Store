@@ -1,0 +1,49 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.cartIcon {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.link{
+  margin-right: 20px;
+  color: #fff;
+}
+.cartItemCount {
+  margin-right: 20px;
+  background-color: red;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+ 
+  .cartButton {
+    margin-top: 1rem; 
+  }
+}
