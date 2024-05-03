@@ -1,3 +1,5 @@
+
+/* Filter CSS */
 .filters {
   border-radius: 5px;
   padding: 15px;
@@ -44,7 +46,7 @@
 .popupButton {
   display: none; /* Hide the popup button by default */
 }
-
+/* Popup CSS */
 .popup {
   display: none; /* Hide the popup by default */
   position: relative;
@@ -112,7 +114,7 @@
   
   .popup-apply-button {
     display: flex; /* Show the popup button on mobile */
-    justify-content: center;
+    justify-content:center;
     background-color: #007bff;
     color: #fff;
     border: none;

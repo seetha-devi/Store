@@ -253,7 +253,7 @@ const Filters = ({ onFilter }) =>{
                 handleFilter()
                 dispatch(togglePopup());
               }}>Apply Filters</button>
-
+            
            
           </div>
 
