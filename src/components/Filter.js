@@ -37,6 +37,7 @@ const Filters = ({ onFilter }) =>{
   const price = [
     '0-250',
     '251-450',
+    '450'
   ]
 
 

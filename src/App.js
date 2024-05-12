@@ -1,7 +1,6 @@
 import React, {useEffect, useState}from 'react';
 import ProductListing from './components/ProductListing';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import ShoppingCart from './components/ShoppingCart';
 import Error from './components/Error';
 import './App.css';
@@ -48,7 +47,7 @@ function App() {
           <Route path="/" exact element={<ProductListing/>} />
           <Route path="/cart" element={<ShoppingCart/>} />
         </Routes>
-        <Footer />
+     
       </div>
     </Router>
   );
